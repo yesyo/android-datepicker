@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <include android:id="@+id/month_indicator" layout="@layout/month_indicator" />
+    
+    <TableLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:stretchColumns="*">
+        <TableRow
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content">
+    		
+            <TextView
+                style="@style/calendar_header"
+                android:text="@string/sunday" />
+            
+            <TextView
+                style="@style/calendar_header"
+                android:text="@string/monday" />
+                
+            <TextView
+                style="@style/calendar_header"
+                android:text="@string/tuesday" />
+            
+            <TextView
+                style="@style/calendar_header"
+                android:text="@string/wednesday" />
+            
+            <TextView
+                style="@style/calendar_header"
+                android:text="@string/thursday" />
+            
+            <TextView
+                style="@style/calendar_header"
+                android:text="@string/friday" />
+                
+            <TextView
+                style="@style/calendar_header"
+                android:text="@string/saturday" />
+                
+        </TableRow>
+    </TableLayout>
+    
+    <ViewSwitcher
+        android:id="@+id/calendar_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        
+</LinearLayout>
