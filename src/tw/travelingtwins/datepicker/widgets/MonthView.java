@@ -67,6 +67,8 @@ public class MonthView extends LinearLayout {
 		((ImageButton) mMonthIndicator.findViewById(R.id.next_month))
 				.setOnClickListener(ChangeMonthListener);
 
+		mCurrentMonth.set(Calendar.DAY_OF_MONTH, 1);
+		
 		mViewSwitcher = (ViewSwitcher) findViewById(R.id.calendar_switcher);
 		mViewSwitcher.addView(getCalendarView());
 		mViewSwitcher.addView(getCalendarView());
